@@ -1,6 +1,6 @@
 # Validation
 
-The Skills provide evidence-linked research workflows and guardrails. They are not a software pipeline or a substitute for scientific review. All cases below use fictional inputs.
+The Skills provide evidence-linked research workflows and guardrails. They are not a software pipeline or a substitute for scientific review. The research examples below use fictional inputs.
 
 ## Offline release checks
 
@@ -10,7 +10,20 @@ From the repository root, run:
 python tools/validate_release.py
 ```
 
-The validator checks the release file layout, license and citation metadata, marketplace references, Skill frontmatter, Markdown links, shared Figure Summary fixtures, visual formats and dimensions, and known private-data and draft-text patterns. Passing it does not establish scientific correctness or compatibility with a particular AI host.
+The validator checks the release layout, license, citation and Marketplace metadata, default Skill directories, Skill frontmatter, Markdown links, shared Figure Summary fixtures, visual formats and dimensions, and known private-data and draft-text patterns. Passing it does not establish scientific correctness or compatibility with a particular AI host.
+
+## Remote installation and host discovery
+
+Both [README installation routes](../README.md#quick-install) were tested on Windows on 2026-11-24. Each route started with a fresh project, an isolated user directory and an empty installer cache. The test used Node.js 24.15.0, Skills CLI 1.9.0, Codex CLI 0.171.0-alpha.13 and Claude Code 2.1.142.
+
+| Version | Skills CLI installed | Codex enabled project Skills | Claude Code new-session commands | Claude Code plugin details |
+| --- | ---: | ---: | ---: | ---: |
+| [v1.0.0](https://github.com/carrot-wangqian/plant-omics-research-skills/releases/tag/v1.0.0) | 6 | 6 | 6 | 12 (each name twice) |
+| [v1.0.1](https://github.com/carrot-wangqian/plant-omics-research-skills/releases/tag/v1.0.1) | 6 | 6 | 6 | 6 (each name once) |
+
+The Codex check installed all six Skills with `npx skills add` and queried the app server's `skills/list` method for the project. The Claude Code check registered the remote marketplace, installed the plugin, queried `claude plugin details plant-omics-research-skills@plant-omics-research-skills` and read the command list from a new session. Both hosts reported zero Skills from this repository before installation. Each installed copy contained all six `SKILL.md` files and all 13 reference files, byte-for-byte identical to the tested revision.
+
+In v1.0.0, Claude Code scanned the default `skills/` directory and also counted the six paths listed in the marketplace entry. The v1.0.1 entry uses the default scan alone. The first v1.0.1 remote installations used the same [implementation commit](https://github.com/carrot-wangqian/plant-omics-research-skills/commit/760196a17850e9197d9037134e34ecec95e26f74). Restoring the old path list in a disposable copy caused the offline validator to fail as expected. The [v1.0.1 release notes](https://github.com/carrot-wangqian/plant-omics-research-skills/releases/tag/v1.0.1) identify the final tested commit and archive checksum.
 
 ## Six documented dry runs
 
@@ -27,7 +40,7 @@ Reviewers followed the Skill instructions with synthetic inputs and checked what
 
 ## Five reproducible smoke tests
 
-To check behavior in your own AI host, start a fresh session, load the named Skill, give it the indicated material and request, and compare the result to the expectation. The checks are manual; they do not execute an analysis. Record your host/version and whether you explicitly loaded the Skill. This release does not claim a pass on any specific host.
+To check behavior in your own AI host, start a fresh session, load the named Skill, give it the indicated material and request, and compare the result to the expectation. The checks are manual; they do not execute an analysis. Record your host/version and whether you explicitly loaded the Skill.
 
 | Test | Input and request | Expected result |
 | --- | --- | --- |
