@@ -1,0 +1,17 @@
+flowchart LR
+    scope["01 · Choose mode & limit scope"]
+    scope --> modes["Scope Review / Targeted (default) / Inventory"]
+    modes --> bind["02 · Bind inputs"]
+    bind --> pre["03 · Check prerequisites"]
+    pre --> branch["Inspect relevant modality only"]
+    branch --> classify{"04 · Classify readiness"}
+    classify --> ready["Ready"]
+    classify --> conditional["Conditional"]
+    classify --> blocked["Blocked"]
+    classify --> na["Not Applicable"]
+    ready --> stop["HARD STOP · Preflight is not execution permission"]
+    conditional --> stop
+    blocked --> stop
+    na --> stop
+    classDef block fill:#f3e3de,stroke:#a64239,color:#14262a;
+    class blocked,stop block;

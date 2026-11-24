@@ -1,0 +1,11 @@
+flowchart LR
+ A["01 Verify source"] --> G{"Usable source?"}
+ G -->|Full text| F["Use methods, panels, and captions"]
+ G -->|Partial| P["Use available evidence; label gaps"]
+ G -->|Absent| S["Request the source; STOP"]
+ F --> B["02 Trace design"]
+ P --> B
+ B --> C["03 Read figures"]
+ C --> D["04 Capture methods"]
+ D --> E["05 Save report"]
+ E -.-> H["Optional handoff on request"]

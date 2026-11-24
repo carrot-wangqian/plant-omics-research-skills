@@ -1,0 +1,9 @@
+flowchart TD
+    A["Lock the saved source, signal layer, units and comparability"] --> B["Render versioned exports without changing results"]
+    B --> C{"Inspect actual preview and final exports"}
+    C -->|"Verified checks pass"| D["Record technical pass"]
+    C -->|"Verification incomplete"| E["Record review pending and name missing evidence"]
+    C -->|"A check fails"| F["Record fail; fix and recheck a new export"]
+    F -.-> B
+    D --> G["Deliver exports, source/configuration, QA and matched Figure Summary"]
+    E --> G

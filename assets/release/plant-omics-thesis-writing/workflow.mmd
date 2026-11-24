@@ -1,0 +1,8 @@
+flowchart TD
+    A["Set section scope and preserve the author-approved baseline"] --> B["Map each material claim to a source, unit, comparison and limit"]
+    B --> C{"Evidence fits the claim?"}
+    C -->|"Supported"| D["Draft observation and interpretation separately"]
+    C -->|"Missing or conflicting"| E["Flag the affected claim and identify the needed record"]
+    E --> D
+    D --> F["Verify numbers, panels, citation support and formatting"]
+    F --> G["Deliver revision and precise unresolved issues"]

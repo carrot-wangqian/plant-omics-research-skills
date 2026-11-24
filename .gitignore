@@ -1,0 +1,28 @@
+# OS/editor/cache artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local-only material: never rely on ignore rules as a privacy review
+.env
+.env.*
+*.local
+*.local.json
+*.local.yml
+*.local.yaml
+.local/
+private/
+scratch/
+staging/
+releases/
+*.log
+*.tmp
+*.zip

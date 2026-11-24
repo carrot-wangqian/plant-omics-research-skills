@@ -1,0 +1,14 @@
+flowchart LR
+    define["01 · Define comparison"] --> baseline["02 · Verify baseline"]
+    baseline --> modality{"Select modality"}
+    modality --> msi["MSI branch"]
+    modality --> rna["scRNA / Spatial RNA / Cross-modality"]
+    msi --> compare["03 · Compare options"]
+    rna --> compare
+    compare --> gate{"Authorization gate"}
+    gate -- Authorized --> run["Run bounded comparison"]
+    gate -- Unauthorized --> stop["Stop at plan"]
+    run --> audit["04 · Audit retention: denominators; missing is not zero"]
+    audit --> decide["05 · Record decision"]
+    classDef block fill:#f3e3de,stroke:#a64239,color:#14262a;
+    class stop block;

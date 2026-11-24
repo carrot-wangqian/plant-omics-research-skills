@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="visual-title visual-description"><title id="visual-title">Scientific Figure Standard</title><desc id="visual-description">Restyle and export from saved results. Versioned figure + technical QA</desc><rect x="0" y="0" width="1080" height="1080" rx="0" fill="#f8f6ef" stroke="none" stroke-width="1"/><rect x="0.5" y="0.5" width="1079" height="1079" rx="0" fill="none" stroke="#cad5d5" stroke-width="1"/><text x="68" y="96" font-family="&quot;DejaVu Sans Mono&quot;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26" font-weight="700" fill="#215c75" text-anchor="start" letter-spacing="2">PLANT OMICS RESEARCH SKILLS</text><text x="1012" y="96" font-family="&quot;DejaVu Sans Mono&quot;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="700" fill="#5a6b6e" text-anchor="end" letter-spacing="0">05 / 06</text><path d="M68 130H1012" fill="none" stroke="#cad5d5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="68" y="244" font-family="&quot;DejaVu Serif&quot;, Georgia, &quot;Times New Roman&quot;, serif" font-size="80" font-weight="400" fill="#14262a" text-anchor="start" letter-spacing="0">Scientific</text><text x="68" y="336" font-family="&quot;DejaVu Serif&quot;, Georgia, &quot;Times New Roman&quot;, serif" font-size="80" font-weight="400" fill="#14262a" text-anchor="start" letter-spacing="0">Figure Standard</text><text x="70" y="408" font-family="&quot;DejaVu Sans&quot;, Inter, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif" font-size="35" font-weight="400" fill="#5a6b6e" text-anchor="start" letter-spacing="0">Restyle and export from saved results.</text><rect x="68" y="550" width="944" height="342" rx="3" fill="#f2eee3" stroke="#cad5d5" stroke-width="1"/><path d="M104 595h40m-20 -20v40 M936 595h40m-20 -20v40 M104 785h40m-20 -20v40 M936 785h40m-20 -20v40" fill="none" stroke="#cad5d5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><g transform="translate(342.80 570.20) scale(1.16)">
+<g stroke="#173D2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <ellipse cx="175" cy="221" rx="150" ry="19" fill="#C5D79D" stroke="none"/>
+  <circle cx="176" cy="126" r="111" fill="#E5EEC3" stroke="none"/>
+  <path d="M36 52v-9h9m-9 153v9h9M298 42h9v9" fill="none" stroke="#73905A"/>
+  <rect x="53" y="44" width="232" height="155" rx="14" fill="#AAC778" transform="rotate(-7 169 122)"/>
+  <rect x="59" y="46" width="231" height="152" rx="14" fill="#FFFDF1"/>
+  <path d="M60 70h229" fill="none"/>
+  <circle cx="73" cy="58" r="2" fill="#A3BE69" stroke="none"/>
+  <circle cx="81" cy="58" r="2" fill="#A3BE69" stroke="none"/>
+  <circle cx="89" cy="58" r="2" fill="#A3BE69" stroke="none"/>
+  <rect x="75" y="83" width="107" height="88" rx="8" fill="#EEF3DA" stroke="#759357" stroke-width="2"/>
+  <path d="M91 140c15-36 43-45 76-41-7 29-36 54-76 41Z" fill="#ACCA73"/>
+  <path d="M90 146c23-17 37-24 60-34" fill="none" stroke-width="2"/>
+  <rect x="106" y="122" width="8" height="8" rx="1" fill="#E9AB72" stroke="none"/>
+  <rect x="118" y="113" width="8" height="8" rx="1" fill="#CB7955" stroke="none"/>
+  <rect x="129" y="118" width="8" height="8" rx="1" fill="#E9AB72" stroke="none"/>
+  <rect x="140" y="109" width="8" height="8" rx="1" fill="#F8E0A1" stroke="none"/>
+  <path d="M85 157h15" fill="none" stroke-width="2.8"/>
+  <rect x="194" y="83" width="80" height="88" rx="8" fill="#EEF3DA" stroke="#759357" stroke-width="2"/>
+  <path d="M209 99v53h49" fill="none" stroke-width="2"/>
+  <path d="M220 138l11-9 10 4 12-17" fill="none" stroke="#BD6748" stroke-width="3"/>
+  <circle cx="220" cy="138" r="3" fill="#BD6748" stroke="none"/>
+  <circle cx="231" cy="129" r="3" fill="#BD6748" stroke="none"/>
+  <circle cx="241" cy="133" r="3" fill="#BD6748" stroke="none"/>
+  <circle cx="253" cy="116" r="3" fill="#BD6748" stroke="none"/>
+  <path d="M78 183h31m7 0h13" stroke="#759357" stroke-width="2.5"/>
+  <path d="M250 174l37 31" stroke-width="12"/>
+  <path d="M250 174l37 31" stroke="#DB915F" stroke-width="6"/>
+  <circle cx="231" cy="155" r="29" fill="#F8F7D9" fill-opacity=".36" stroke-width="5"/>
+  <path d="M214 156l10 10 18-21" fill="none" stroke-width="4.5"/>
+  <path d="M33 114q10 0 10-10 0 10 10 10-10 0-10 10 0-10-10-10Z" fill="#DB915F" stroke="none"/>
+  <path d="M295 89q10 0 10-10 0 10 10 10-10 0-10 10 0-10-10-10Z" fill="#96B661" stroke="none"/>
+</g>
+</g><rect x="68" y="929" width="944" height="85" rx="0" fill="#173646" stroke="none" stroke-width="1"/><text x="95" y="982" font-family="&quot;DejaVu Sans&quot;, Inter, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif" font-size="33" font-weight="700" fill="#e5f4ed" text-anchor="start" letter-spacing="0">Versioned figure + technical QA</text></svg>

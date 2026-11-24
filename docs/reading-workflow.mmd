@@ -1,0 +1,12 @@
+flowchart TD
+  A["01 Verify source"] --> Q{"Full text available?"}
+  Q -->|Yes| B["Use full text; check methods, panels and captions"]
+  Q -->|No| C["Use available evidence; label what could not be verified"]
+  B --> D["02 Trace design"]
+  C -->|Material available| D
+  C -->|No usable material| Z["Request a source; stop"]
+  D --> E["03 Read figures"]
+  E --> F["04 Capture methods"]
+  F --> G["05 Save report"]
+  G --> H["Evidence-linked reading report"]
+  H -.->|On request| I["Optional handoff: open questions and next steps"]
