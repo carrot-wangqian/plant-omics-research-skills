@@ -1,7 +1,7 @@
 {
   "name": "plant-omics-research-skills",
   "description": "Evidence-linked research skills for plant spatial and single-cell omics.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "owner": {
     "name": "Qian Wang",
     "url": "https://github.com/carrot-wangqian"
@@ -11,20 +11,12 @@
       "name": "plant-omics-research-skills",
       "description": "Six independent skills for paper reading, preflight, analysis, figure explanation, figure production, and thesis writing.",
       "source": "./",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Qian Wang"
       },
       "repository": "https://github.com/carrot-wangqian/plant-omics-research-skills",
-      "license": "MIT",
-      "skills": [
-        "./skills/spatial-omics-paper-reading",
-        "./skills/plant-omics-preflight",
-        "./skills/plant-spatial-omics-analysis",
-        "./skills/analysis-explainer",
-        "./skills/scientific-figure-standard",
-        "./skills/plant-omics-thesis-writing"
-      ]
+      "license": "MIT"
     }
   ]
 }

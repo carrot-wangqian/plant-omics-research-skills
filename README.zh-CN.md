@@ -3,7 +3,7 @@
 [English](README.md) · 简体中文
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-215c75)](LICENSE)
-![Release: v1.0.0](https://img.shields.io/badge/Release-v1.0.0-215c75)
+![Release: v1.0.1](https://img.shields.io/badge/Release-v1.0.1-215c75)
 ![Skills: 6](https://img.shields.io/badge/Skills-6-215c75)
 
 ![植物组学科研 Skills：六个相互独立、可回溯证据的植物空间与单细胞组学技能](assets/release/hero-banner.png)

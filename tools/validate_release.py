@@ -41,7 +41,7 @@ ROOTS = {
 PROJECT = "Plant Omics Research Skills"
 PLUGIN = "plant-omics-research-skills"
 OWNER = "Qian Wang"
-RELEASE = "1.0.0"
+RELEASE = "1.0.1"
 REPO = f"https://github.com/carrot-wangqian/{PLUGIN}"
 KEYWORDS = {
     "plant-omics", "spatial-omics", "mass-spectrometry-imaging", "single-cell",
@@ -215,6 +215,7 @@ def check_metadata():
     owners = ({"name": OWNER}, {"name": OWNER, "url": REPO.rsplit("/", 1)[0]})
     require(isinstance(market, dict) and market.get("name") == PLUGIN and
             market.get("owner") in owners, "Marketplace: wrong name or owner")
+    require(market.get("version") == RELEASE, "Marketplace: wrong version")
     plugins = market.get("plugins")
     require(isinstance(plugins, list) and len(plugins) == 1 and isinstance(plugins[0], dict),
             "Marketplace: expected one plugin record")
@@ -229,15 +230,9 @@ def check_metadata():
     source_root = (index.parent.parent / plugin["source"]).resolve()
     require(source_root == BASE and source_root.is_dir(),
             "Marketplace plugin: relative source must resolve to repository root")
-    expected_paths = {f"./skills/{slug}" for slug in SKILL_IDS}
-    skills = plugin.get("skills")
-    require(isinstance(skills, list) and all(isinstance(v, str) for v in skills) and
-            len(skills) == len(expected_paths) and set(skills) == expected_paths,
-            "Marketplace plugin: expected the six distinct local Skill paths")
-    for ref in skills:
-        target = (source_root / ref).resolve()
-        require(target.parent == SKILLS and target.is_dir() and (target / "SKILL.md").is_file(),
-                f"Marketplace plugin: invalid Skill path {ref!r}")
+    # Claude Code always scans skills/. Extra entries would register these Skills twice.
+    require(plugin.get("skills", []) == [],
+            "Marketplace plugin: use default skills/ discovery to load each Skill once")
 
 
 def number(v):
@@ -435,7 +430,7 @@ def main():
     check_metadata()
     pair_count, mermaid_count = check_assets()
     scanned, deny_count = privacy_checks(files(), pdfs)
-    print("PASS: approved MIT license, CFF v1.2.0, and Marketplace metadata for v1.0.0 (6 local Skills)")
+    print(f"PASS: approved MIT license, CFF v1.2.0, and Marketplace metadata for v{RELEASE} (6 local Skills)")
     print("PASS: 6 Skill folders, both README editions, and shared fixtures")
     print(f"PASS: {link_count} Markdown relative link targets")
     print(f"PASS: {pair_count} SVG/PNG pairs: dimensions, desc, font stacks, backing, border and opacity")

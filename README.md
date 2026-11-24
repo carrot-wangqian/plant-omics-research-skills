@@ -3,7 +3,7 @@
 English · [简体中文](README.zh-CN.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-215c75)](LICENSE)
-![Release: v1.0.0](https://img.shields.io/badge/Release-v1.0.0-215c75)
+![Release: v1.0.1](https://img.shields.io/badge/Release-v1.0.1-215c75)
 ![Skills: 6](https://img.shields.io/badge/Skills-6-215c75)
 
 ![Plant Omics Research Skills: six independent, evidence-linked skills for plant spatial and single-cell omics](assets/release/hero-banner.png)
